@@ -1,0 +1,86 @@
+body {margin:0;background-color:#b0b0b0;font-family: 'Raleway', sans-serif;}
+
+header {position:relative;background-color:#6a9c2f;position:relative;box-shadow:0px 0px 5px 0px #333;border-bottom:1px solid 415d20}
+header ul {padding:0;margin-bottom:0px}
+header ul li {list-style-type:none}
+header li.logo {display:inline-block;font-weight:bold;font-size:30px;margin:-25px 60px;color:#2c6d2e;text-shadow:1px 1px #598228}
+header li#profile {float:right;}
+header li#profile a {display:block;padding:12px 20px;text-decoration:none;color:#ddd;font-weight:bold;font-size:18px;}
+header #profile-dropdown-collapse {position:absolute;width:200px;right:5px;top:60px;background-color:#6a9c2f;padding:5px 0;border-radius:5px;box-shadow:0px 0px 5px 0px #333;z-index:1;}
+header #profile-dropdown-collapse::before {content:'';display:block;width:0;height:0;border:10px solid;border-color:transparent transparent #6a9c2f;position:absolute;right:35px;top:-20px}
+header #profile-dropdown-collapse li a {background-color:#6a9c2f;width:calc(100% - 20px);display:block;padding:5px 10px;color:#ddd;font-weight:bold;text-decoration:none;transition:.3s;}
+header #profile-dropdown-collapse li a:hover {background-color:#598228}
+
+body .side-menu {float:left;width:300px;border-right:1px solid #415d20;background-color:#6a9c2f;height:calc(100vh - 45px);box-shadow:0px 0px 5px 0px #333}
+body .side-menu ul {padding:0;margin:0}
+body .side-menu > ul > li {list-style-type:none;width:300px}
+body .side-menu > ul > li > a {color:#ddd;display:block;text-decoration:none;background-color:#598228;width:calc(100% - 35px);padding:20px 10px 20px 25px;font-size:23px;font-weight:bold;border-bottom:1px solid #415d20;}
+body .side-menu ul li ul {border-bottom:1px solid #415d20;padding:5px 0}
+body .side-menu ul li ul li {padding:2px 0;overflow:hidden;position:relative;z-index:0}
+body .side-menu ul li ul li::after {content:'';display:block;width:300px;height:0px;background:#598228;position:absolute;top:50%;left:0;z-index:-1;transition:.5s}
+body .side-menu ul li ul li:hover::after {height:30px;top:0}
+body .side-menu ul li ul li a {display:block;text-decoration:none;color:#000;font-size:18px;padding:2px 25px 0}
+body .side-menu ul li ul li a::before {content:'- '}
+
+body .container {padding:25px 25px;width:calc(100% - 351px);float:left;position:relative}
+body .container h1 {margin:0}
+
+/*++++++ Profile ++++++*/
+
+#profile h1 {text-align:center;color:#333;font-size:40px}
+#profile .section-row-1 {padding:30px 250px}
+#profile .section-row-1 .profile-img {display:inline-block;width:300px;}
+#profile .section-row-1 .profile-data {display:inline-block;vertical-align:top}
+#profile .section-row-1 .profile-img img {width:100%;border-radius:50%;border:2px solid #999}
+#profile .section-row-1 .profile-data {padding:50px 0 0 50px;}
+#profile .section-row-1 .profile-data table {background-color:#ccc;border-radius:10px;margin-bottom:15px}
+#profile .section-row-1 .profile-data table tr td {padding:5px 10px;color:#333}
+#profile .section-row-1 .profile-data table tr:nth-child(n+2) td {border-top:1px solid #aaa;}
+#profile .section-row-1 .profile-data table tr td:first-child {font-weight:bold;}
+#profile a.btn {background-color:#ccc;color:#333;text-decoration:none;font-weight:bold;padding:5px 10px;border-radius:5px;border:1px solid #999;transition:.3s}
+#profile a.btn:hover {background-color:#bbb;}
+
+#edit-profile h1 {text-align:center;color:#333;font-size:40px}
+#edit-profile .section-row-1 {padding:30px 250px}
+#edit-profile .section-row-1 form {text-align:center}
+#edit-profile .section-row-1 table {background-color:#ccc;border-radius:10px;margin:0 auto 15px}
+#edit-profile .section-row-1 table tr td {padding:5px 10px;color:#333}
+#edit-profile .section-row-1 table tr:nth-child(n+2) td {border-top:1px solid #aaa;}
+#edit-profile .section-row-1 table tr td:first-child {font-weight:bold;}
+#edit-profile .section-row-1 table tr td input[type="text"] {background-color:#bbb;border:1px solid #aaa;padding:2px 5px;border-radius:5px;}
+#edit-profile input.btn {background-color:#ccc;color:#333;text-decoration:none;font-weight:bold;padding:5px 10px;border-radius:5px;border:1px solid #999;transition:.3s;}
+#edit-profile input.btn:hover {background-color:#bbb;}
+
+#create-project h1 {text-align:center;color:#333;font-size:40px}
+#create-project .section-row-1 {padding:30px 250px}
+#create-project .section-row-1 form {text-align:center}
+#create-project .section-row-1 table {background-color:#ccc;border-radius:10px;margin:0 auto 15px}
+#create-project .section-row-1 table tr td {padding:5px 10px;color:#333}
+#create-project .section-row-1 table tr:nth-child(n+2) td {border-top:1px solid #aaa;}
+#create-project .section-row-1 table tr td:first-child {font-weight:bold;}
+#create-project .section-row-1 table tr td input[type="text"] {background-color:#bbb;border:1px solid #aaa;padding:2px 5px;border-radius:5px;}
+#create-project input.btn {background-color:#ccc;color:#333;text-decoration:none;font-weight:bold;padding:5px 10px;border-radius:5px;border:1px solid #999;transition:.3s;}
+#create-project input.btn:hover {background-color:#bbb;}
+
+#create-declaration h1 {text-align:center;color:#333;font-size:40px}
+#create-declaration .section-row-1 {padding:30px 250px}
+#create-declaration .section-row-1 form {text-align:center}
+#create-declaration .section-row-1 table {background-color:#ccc;border-radius:10px;margin:0 auto 15px}
+#create-declaration .section-row-1 table tr td {padding:5px 10px;color:#333}
+#create-declaration .section-row-1 table tr:nth-child(n+2) td {border-top:1px solid #aaa;}
+#create-declaration .section-row-1 table tr td:first-child {font-weight:bold;}
+#create-declaration .section-row-1 table tr td select {background-color:#bbb;border:1px solid #aaa;padding:2px 5px;border-radius:5px;}
+#create-declaration input.btn {background-color:#ccc;color:#333;text-decoration:none;font-weight:bold;padding:5px 10px;border-radius:5px;border:1px solid #999;transition:.3s;}
+#create-declaration input.btn:hover {background-color:#bbb;}
+
+#project-overview h1 {text-align:center;color:#333;font-size:40px}
+#project-overview .section-row-1 table {background-color:#ccc;border-radius;10px;margin:10px auto 15px;width:100%}
+#project-overview .section-row-1 table tr td {padding:5px 10px;color:#333}
+#project-overview .section-row-1 table tr td:first-child {width:20px;text-align:center}
+#project-overview .section-row-1 table tbody tr:nth-child(odd) {background-color:#bbb}
+
+#user-overview h1 {text-align:center;color:#333;font-size:40px}
+#user-overview .section-row-1 table {background-color:#ccc;border-radius;10px;margin:10px auto 15px;width:100%}
+#user-overview .section-row-1 table tr td {padding:5px 10px;color:#333}
+#user-overview .section-row-1 table tr td:first-child {width:20px;text-align:center}
+#user-overview .section-row-1 table tbody tr:nth-child(odd) {background-color:#bbb}

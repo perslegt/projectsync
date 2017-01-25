@@ -1,0 +1,55 @@
+body {
+    background-color:#b0b0b0;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {position:absolute;left:50%;transform:translateX(-50%);top:-50px;color:#c0c0c0;font-size:100px;text-shadow:1px 1px #777}
+
+.container {position:relative;width:500px;margin:200px auto 0;color:#ddd;}
+
+.container .activation {background-color:#308c34;border: 1px solid #2c6d2e;border-radius:20px;box-shadow:0px 0px 20px -3px #333;z-index:1;text-align:center;}
+.container .activation a {width:150px;border:1px solid #2c6d2e;background-color:#6a9c2f;color:#ddd;font-weight:bold;font-size:14px;box-shadow:0px 0px 5px -2px #333;cursor:pointer;border-radius:5px;transition:.3s;display:block;margin:0 auto;padding:8px 0;text-decoration:none;margin-bottom:20px}
+.container .activation a:hover {background-color:#64922c}
+
+.container .forgot-password,
+.container .reset-password,
+.container .tab-content.current {position:relative;background-color:#308c34;border: 1px solid #2c6d2e;border-radius:20px;box-shadow:0px 0px 20px -3px #333;z-index:1;text-align:center;}
+.container .tab-content:not(.current) {display:none}
+
+.container ul.tab-menu {padding:0;position:absolute;top:-54px;left:25px;}
+.container ul.tab-menu li {display:inline-block;cursor:pointer;background-color:#6a9c2f;padding:10px 25px;border-top-left-radius:10px;border-top-right-radius:10px;font-weight:bold;transition:background-color .3s, padding .2s}
+.container ul.tab-menu li:not(.current):hover {background-color:#64922c}
+.container ul.tab-menu li.current {position:relative;background-color:#308c34;padding:12px 25px;z-index:2;border:1px solid #2c6d2e;box-shadow:0px 0px 20px -3px #333;}
+.container ul.tab-menu li.current::after {display:block;background-color:#308c34;width:120%;height:20px;content:'';left:-8px;bottom:-16px;position:absolute;}
+
+.container .tab-content .form-row,
+.container .forgot-password .form-row,
+.container .reset-password .form-row {position:relative;}
+.container .tab-content .form-row input,
+.container .forgot-password .form-row input,
+.container .reset-password .form-row input {display:block;margin:0 auto 25px;width:300px;background-color:#308c34;border:none;border-bottom:1px solid #ddd;height:25px;transition:.5s;color:#ddd;}
+.container .tab-content .form-row input:focus,
+.container .forgot-password .form-row input:focus,
+.container .reset-password .form-row input:focus {outline:none;background-color:rgba(0, 0, 0, 0.1);}
+.container .tab-content .form-row input::-webkit-input-placeholder,
+.container .forgot-password .form-row input::-webkit-input-placeholder,
+.container .reset-password .form-row input::-webkit-input-placeholder {color:#ddd;transition:.5s;font-size:14px;font-family: 'Raleway', sans-serif;}
+.container .tab-content .form-row input:focus::-webkit-input-placeholder,
+.container .forgot-password .form-row input:focus::-webkit-input-placeholder,
+.container .reset-password .form-row input:focus::-webkit-input-placeholder {transform:translateY(-21px);font-size:13px;}
+.container .tab-content .form-row input + label,
+.container .forgot-password .form-row input + label,
+.container .reset-password .form-row input + label {font-size:13px;position:absolute;top:-17px;left:99px;opacity:0;transition-delay:0s;}
+.container .tab-content .form-row input:focus + label,
+.container .forgot-password .form-row input:focus + label,
+.container .reset-password .form-row input:focus + label {opacity:1;transition-delay:.5s;}
+
+.container .tab-content .form-row input[type='submit'],
+.container .forgot-password .form-row input[type='submit'],
+.container .reset-password .form-row input[type='submit'] {width:150px;border:1px solid #2c6d2e;background-color:#6a9c2f;color:#ddd;font-weight:bold;font-size:14px;box-shadow:0px 0px 5px -2px #333;cursor:pointer;height:30px;border-radius:5px;transition:.3s}
+.container .tab-content .form-row input[type='submit']:hover,
+.container .forgot-password .form-row input[type='submit']:hover,
+.container .reset-password .form-row input[type='submit']:hover {background-color:#64922c}
+
+.container .tab-content.login .form-row:last-child a {color:#ddd;text-decoration:none;font-size:14px;display:block;margin-bottom:5px;transition:.5s}
+.container .tab-content.login .form-row:last-child a:hover {color:#80da16}
